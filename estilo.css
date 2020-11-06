@@ -8,10 +8,15 @@ body{
 
 .card{
     height: 450px;
-    width: 250px;
+    width: 200px;
     
     }
 
 .linha{
     display: inline-block;
+}
+
+.card-deck{
+    text-align: center;
+    align-content: center;
 }
