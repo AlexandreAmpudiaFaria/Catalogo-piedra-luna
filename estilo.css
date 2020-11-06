@@ -9,13 +9,7 @@ body{
 .card{
     @media (min-width: 576px) { 
     height: 400px;
-    width: 200px;
-    };
-    
-    @media (min-width: 992px) {
-    height: 400px;
-    width: 250px;
-
+    width: 50px;
     };
 
 }
