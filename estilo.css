@@ -15,11 +15,5 @@ img.produto{
     @media (min-width: 576px) {
     margin-top: 1px;
     margin-right: 1px;
-    @media (min-width: 992px) { 
-        margin-top: 1px;
-        margin-right: 1px;
-        }
-    }
-
     
 }
