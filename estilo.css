@@ -20,6 +20,8 @@ img.produto{
     @media (min-width: 576px) {
     margin-top: 1px;
     margin-right: 1px;
+    height: 50px;
+        width: 50px;
     }
     
 }
