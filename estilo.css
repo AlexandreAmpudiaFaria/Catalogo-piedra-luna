@@ -6,6 +6,14 @@ body{
     background-color: #425859;
 }
 
-.card{
+.card {
+
+    @include media-breakpoint-only(sm) {
+        column-count: 2;
+      }
+
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
     
-}
+  }
