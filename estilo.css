@@ -6,8 +6,12 @@ body{
     background-color: #425859;
 }
 
+img.produto{
+    width: 200px;
+}
+
 .card{
 display: inline-block;
 height: 400px;
-width: 250px;
+width: 200px;
 }
