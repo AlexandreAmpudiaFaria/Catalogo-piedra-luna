@@ -10,3 +10,8 @@ img.produto{
     height: 250px;
     width: 250px;
 }
+
+.card{
+    margin-top: auto;
+    margin-right: 10px;
+}
