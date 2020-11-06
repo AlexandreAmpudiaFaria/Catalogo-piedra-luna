@@ -7,9 +7,5 @@ body{
 }
 
 .card{
-    @media (min-width: 576px) { 
-    height: 400px;
-    width: 50px;
-    };
-
+    
 }
