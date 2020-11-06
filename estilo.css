@@ -14,4 +14,8 @@ img.produto{
 .card{
     margin-top: 10px;
     margin-right: 10px;
+    @media (min-width: 576px) {
+    margin-top: 1px;
+    margin-right: 1px;
+    }
 }
