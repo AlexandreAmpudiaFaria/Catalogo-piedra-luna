@@ -6,9 +6,3 @@ body{
     background-color: #425859;
 }
 
-.card {
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-    
-  }
