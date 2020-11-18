@@ -3,6 +3,24 @@
 
 <head>
 
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -56,8 +74,9 @@
 
         <h1 class="my-4">Piedra Luna</h1>
         <div class="list-group">
-          <a href="#" class="list-group-item" style="color: #42574f;">Semijoias</a>
-          <a href="joias-maria-dolores.html" class="list-group-item" style="color: #42574f;">Joias Maria Dolores</a>
+          <a href="semijoias-fios-de-algodao.html" class="list-group-item" style="color: #42574f;">Semijoias Fios de
+            Algodão</a>
+          <a href="joias-maria-dolores.html" class="list-group-item" style="color: #42574f;">Semijoias Maria Dolores</a>
           <a href="#" class="list-group-item" style="color: #42574f;">Joias</a>
         </div>
 
@@ -74,13 +93,14 @@
               <a href="#"><img class="card-img-top" src="./imagens/CorrentePantanalChampanhe_800x.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#" >Corrente Pantanal</a>
+                  <a class="nomeProduto" href="#">Corrente Pantanal</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
                 </p>
-                <a href="https://api.whatsapp.com/send?phone=5517981090162" class="btn btn-success">Comprar <i
+                <button class="send-wpp btn btn-success">Comprar <i
                     class="fab fa-whatsapp"></i></a>
+                  </button>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9734; &#9734;</small>
@@ -93,12 +113,12 @@
               <a href="#"><img class="card-img-top" src="./imagens/anel-bico-de-tucano.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Anel Bico de Tucano</a>
+                  <a href="#" class="nomeProduto">Anel Bico de Tucano</a>
                 </h4>
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
                 </p>
-                <a href="https://api.whatsapp.com/send?phone=5517981090162" class="btn btn-success">Comprar <i
+                <a href="https://api.whatsapp.com/send?phone=5517981090162" class="btn btn-success" class="send-wpp">Comprar <i
                     class="fab fa-whatsapp"></i></a>
               </div>
               <div class="card-footer">
@@ -516,6 +536,22 @@
 
   </div>
   <!-- /.container -->
+
+  <script>        
+    document.querySelector('.send-wpp').onclick = function(){
+        var msg = '';
+        msg += 'Olá, tudo bem?\n';
+        msg += 'Estou olhando o produto: ' + document.querySelector('.nomeProduto').innerHTML.trim() + '\n';
+        msg += 'Link: ' + window.location.href;
+        msg = window.encodeURIComponent(msg);
+        
+        var url = 'https://api.whatsapp.com/send?';
+        url += 'phone=5518997096562&';
+        url += 'text=' + msg;
+        window.open(url, '_blank');
+    };
+</script>
+
 
   <!-- Footer -->
   <footer class="py-5" style="background-color:#e5c9c5;">
