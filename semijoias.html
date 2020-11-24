@@ -19,3 +19,25 @@
         window.open(url, '_blank');
     };
 </script>
+
+
+
+
+
+<script defer>        
+    document.querySelector('.send-wpp').onclick = function(){
+        var msg = '';
+        msg += 'Olá, tudo bem?\n';
+        msg += 'Estou olhando o produto: ' + document.querySelector('.nomeProduto').innerHTML.trim() + '\n';
+        msg += 'Link: ' + window.location.href;
+        msg = window.encodeURIComponent(msg);
+        
+        var url = 'https://api.whatsapp.com/send?';
+        url += 'phone=5518997096562&';
+        url += 'text=' + msg;
+        window.open(url, '_blank');
+    };
+</script>
+
+
+<a href="https://www.tudogostoso.com.br/especial/65-delicias-de-natal"></a>
