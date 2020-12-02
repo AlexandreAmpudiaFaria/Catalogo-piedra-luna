@@ -5,3 +5,10 @@ a{
 .titulos{
     margin-top: 60px;
 }
+
+@media only screen and (max-width: 400px){
+    btns{
+        margin-top: 10px;
+
+    }
+}
