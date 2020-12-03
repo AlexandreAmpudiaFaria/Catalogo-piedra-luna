@@ -5,9 +5,3 @@ a{
 .titulos{
     margin-top: 60px;
 }
-
-@media (max-width: 576px) { 
-    #teste{
-        margin-top: 10px!important;
-    }
-    }
