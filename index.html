@@ -110,7 +110,7 @@
                 <h5>$24.99</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
                 </p>
-                <button class="send-wpp btn btn-success">Comprar <i class="fab fa-whatsapp"></i></a>
+                <button class="btn btn-success">Comprar <i class="fab fa-whatsapp"></i></a>
                 </button>
               </div>
               <div class="card-footer">
@@ -1500,16 +1500,10 @@
 
   <script>
     function enviar() {
-      var msg = '';
-      msg += 'Olá, tudo bem?\n';
-      msg += 'Estou olhando o produto: ' + $nome + document.querySelector('.nomeProduto').innerHTML.trim() + '\n';
-      msg += 'Link: ' + window.location.href;
       msg = window.encodeURIComponent(msg);
 
       var url = 'https://api.whatsapp.com/send?';
       url += 'phone=5518997096562&';
-      url += 'text=' + msg;
-      window.open(url, '_blank');
     };
   </script>
 
